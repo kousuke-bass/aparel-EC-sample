@@ -31,8 +31,8 @@ $(function(){
 		}
 		items.forEach(function(item, index){
 			html_template += `<li class="item" data-item-id="${item['id']}">
-			    <a href="detail.html?id=${item['id']}">
-			      <div class="item-cap"><img src="./img/item/${item['id']}.png" loading="lazy"></div>
+			    <a href="../main-html/index.html?id=${item['id']}">
+			      <div class="item-cap"><img src="../item/${item['id']}.png" loading="lazy"></div>
 			      <div class="item-info">
 			        <h3 class="item-name">${item['name']}</h3>
 			        <p class="item-text">${item['text']}</p>
