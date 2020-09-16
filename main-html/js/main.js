@@ -353,8 +353,8 @@ $(function(){
 		Object.keys(item_detail).forEach(function(key){
 			$(`[data-item-parts="${key}"]`).text(item_detail[key]);
 		});
-		$('#zoom-img').attr('src', `./img/item/${item_detail['id']}.png`);
-		$('#zoom-img').attr('data-zoom-image', `./img/item/${item_detail['id']}_l.png`);
+		$('#zoom-img').attr('src', `../item/${item_detail['id']}.png`);
+		$('#zoom-img').attr('data-zoom-image', `..item/${item_detail['id']}_l.png`);
 		$('.item-detail').attr('data-item-id', item_detail['id']);
 		if( !item_detail['new'] ){
 			$('.new-label').remove();
